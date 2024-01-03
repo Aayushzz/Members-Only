@@ -1,0 +1,116 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(213,222,245);
+    background: linear-gradient(90deg, rgba(213,222,245,1) 0%, rgba(102,67,181,1) 73%, rgba(67,15,88,1) 100%);
+}
+a{
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+    color: #430f58;
+}
+.title :focus{
+    text-decoration: none;
+    color: #430f58;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: rgb(213,222,245);
+    background: linear-gradient(90deg, rgba(213,222,245,1) 0%, rgba(102,67,181,1) 73%, rgba(67,15,88,1) 100%);
+    color: #430f58;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+.header-right{
+   display: flex;
+   color: #d5def5;
+}
+.header-right .button {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #d5def5;
+    color: #430f58;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-right .button:hover {
+    background-color: #430f58;
+    color: #d5def5;
+}
+
+
+.form-group {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(0,0,0, 0); /* Transparent white background */
+    border-radius: 3px;
+    border: 3px solid #430f58;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form-group form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid#430f58;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #430f58;
+    outline: none;
+}
+
+.form-group button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #430f58;
+    color: #d5def5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: content-box;
+}
+
+.form-group button:hover {
+    background-color: #d5def5;
+    color: #430f58;
+}

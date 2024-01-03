@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Members Only</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-left">
+        <a href="/" class="logo"><h1>Members Only</h1></a>
+      </div>
+      <div class="header-right">
+        <% if (typeof Name != 'undefined'){ %>
+            <div class="user"><%= Name %></div>
+            <a href="/Post" class="button">Create a Post</a>
+            <a href="/member" class="button">Become a Member</a>
+            <a href="/log-out" class="button">Log-Out</a>
+        <% } else { %> 
+            <a href="/log-in" class="button">Log In</a>
+            <a href="/sign-up" class="button">Sign-Up</a>
+        <% } %>
+      </div>
+    </div>
+    <script>
+      function logOut(){
+        console.log('called')
+        document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      }
+    </script>
+  </body>
+</html>

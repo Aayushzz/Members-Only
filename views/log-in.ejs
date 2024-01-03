@@ -1,0 +1,25 @@
+<%- include('layout') %>
+
+<div class="form-group" id="signupForm">
+  <h1>Log In</h1>
+
+  <!-- Display error message -->
+  <% if (typeof errorMessage != 'undefined') { %>
+    <p class="error-message"><%= errorMessage %></p>
+  <% } %>
+
+  <form action="" method="POST" class="content">
+    <label for="Name">Name:</label>
+    <input type="text" name="Name" placeholder="Name" />
+
+    <label for="Email">Email:</label>
+    <input type="email" name="Email" placeholder="Email" />
+
+    <label for="Password">Password:</label>
+    <input type="password" name="Password" placeholder="Password" />
+
+    <button>Log In</button>
+  </form>
+</div>
+
+<script src="/scripts/signup.js"></script>
