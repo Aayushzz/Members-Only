@@ -26,12 +26,4 @@ app.use(express.static(path.join(__dirname, "public")));
 const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
 
-const signupRouter = require("./routes/sign-up");
-app.use("/sign-up", signupRouter);
-
-const loginRouter = require("./routes/log-in");
-app.use("/log-in", loginRouter);
-
-const logoutRouter = require('./routes/log-out');
-app.use('/log-out', logoutRouter);
 app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
