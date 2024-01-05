@@ -15,7 +15,6 @@
         <% if (typeof Name != 'undefined'){ %>
             <div class="user"><%= Name %></div>
             <a href="/post" class="button">Create a Post</a>
-            <a href="/member" class="button">Become a Member</a>
             <a href="/log-out" class="button">Log-Out</a>
         <% } else { %> 
             <a href="/log-in" class="button">Log In</a>
@@ -23,11 +22,5 @@
         <% } %>
       </div>
     </div>
-    <script>
-      function logOut(){
-        console.log('called')
-        document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-      }
-    </script>
   </body>
 </html>

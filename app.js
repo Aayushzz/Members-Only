@@ -1,10 +1,15 @@
 const express = require("express");
 const path = require("path");
 const session = require("express-session");
+
 const app = express();
 const PORT = process.env.PORT || 5173;
 require('dotenv').config();
-
+app.use(session({
+    secret:'SECRET_TOKEN',
+    resave: false,
+    saveUninitialized: true
+}))
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 

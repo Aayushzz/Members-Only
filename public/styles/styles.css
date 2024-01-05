@@ -114,3 +114,148 @@ a:active {
     background-color: #d5def5;
     color: #430f58;
 }
+.index-content{
+    padding: 3em;
+}
+.index-title{
+    color: white;
+}
+/* General container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style for the "Create a Post" text */
+/* Style for the "Create a Post" text */
+.createPost {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* You can adjust the color as per your preference */
+}
+
+/* Style for the greeting text */
+.container-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666; /* You can adjust the color as per your preference */
+}
+
+/* Style for the form controls */
+.form-control {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your design */
+}
+
+/* Style for the form labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style for the form inputs and textarea */
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style for the form submit button (if needed) */
+form .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust the color as per your preference */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Optional: Hover effect for the submit button */
+form .submit-btn:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+/* Style for the container div */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Additional style for nested div within container */
+.container > div {
+    margin-bottom: 20px; /* Add some spacing between child div elements */
+}
+/* Style for the button within the form */
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary color, you can adjust as per your preference */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the button */
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+/* Optional: You can add more styles such as focus or active states if needed */
+form button[type="submit"]:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Example focus style */
+}
+
+form button[type="submit"]:active {
+    transform: translateY(1px); /* Add a slight vertical movement on click */
+}
+/* Style for the grid container */
+/* Style for the grid container */
+.index-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust the minmax values as per your requirement */
+    gap: 30px; /* Adjust the gap between grid items as per your requirement */
+    padding: 20px; /* Add some padding around the grid container */
+}
+
+/* Style for individual post */
+.post {
+    border: 1px solid #ccc; /* Add a border around each post for better visibility */
+    padding: 30px; /* Increase the padding around each post content to make it bigger */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect for better visual */
+    transition: transform 0.3s ease; /* Optional: Add transition effect for hover */
+}
+
+/* Hover effect for post */
+.post:hover {
+    transform: scale(1.05); /* Optional: Scale up the post card on hover for a subtle zoom effect */
+}
+
+.post h1 {
+    font-size: 1.8em; /* Increase the font size of the post title */
+    margin-bottom: 15px; /* Add some margin at the bottom of the post title */
+}
+
+.post p {
+    font-size: 1.1em; /* Increase the font size of the post content */
+    line-height: 1.7; /* Adjust the line height for better readability */
+}
+
+.post p {
+    font-size: 1em; /* Adjust the font size of the post content */
+    line-height: 1.6; /* Adjust the line height for better readability */
+}

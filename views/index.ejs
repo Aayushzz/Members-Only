@@ -1,3 +1,16 @@
 <%- include('layout') %>
 
-<div>Index Contents</div>
+<div class="index-content">
+    <div class='index-title'><h1 class="title">Members Only</h1></div>
+    <div class="index-message">Logged in users can create Posts</div>
+    <div class="index-posts">
+        <% allPosts.forEach(post => { %>
+            <div class="post">
+                <h1><%= post.title %></h1>
+                <p><%= post.post %></p>
+                <p>By:- <%= post.creator %></p>
+                <p><%= post.date %></p>
+            </div>
+        <% }); %>
+    </div>
+</div>
